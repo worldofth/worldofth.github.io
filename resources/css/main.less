@@ -1,8 +1,7 @@
 //main: mainjoint.less
 
 header{
-	box-shadow: 0 0 10px rgba(0,0,0,0.4);
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	.title{
 		margin: 10px 0px 15px 0;
 		h1{
@@ -10,7 +9,7 @@ header{
 			display: inline;
 		}
 		h2{
-			margin-left: 10px;
+			margin-left: 5px;
 			margin-top: 5px;
 			display: inline;
 		}
@@ -18,8 +17,44 @@ header{
 	}
 }
 
+nav{
+	text-align: center;
+	margin: 20px 0;
+	li{
+		display: inline-block;
+	}
+	a{
+		font-size: 2.5rem;
+		line-height: 3rem;
+		text-transform: uppercase;
+		margin-left: 30px;
+		&:hover{
+			text-decoration: none;
+			color: #aaa;
+		}
+	}
+}
+
 .work{
+	.box{
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+		padding:10px;
+		.title{
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+			margin-bottom: 10px;
+			display: block;
+		}
+	}
 	.row{
 		margin-bottom: 20px;
+	}
+}
+
+.maincontent{
+	h1, h2, h3, h4, h5{
+		color: @blue;
+		font-weight: 600;
 	}
 }

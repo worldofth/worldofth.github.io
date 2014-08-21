@@ -1,0 +1,31 @@
+//main: mainjoint.less
+.btnhighlight(@basecolor, @angle){
+	background: @basecolor;
+	background-image: -webkit-linear-gradient(@angle, rgba(255,255,255,0), rgba(255,255,255,0.18));
+	background-image: -moz-linear-gradient(@angle, rgba(255,255,255,0), rgba(255,255,255,0.18));
+	background-image: -o-linear-gradient(@angle, rgba(255,255,255,0), rgba(255,255,255,0.18));
+	background-image: -ms-linear-gradient(@angle, rgba(255,255,255,0), rgba(255,255,255,0.18));
+	background-image: linear-gradient((-@angle+90), rgba(255,255,255,0), rgba(255,255,255,0.18));
+}
+
+.iconBefore(@icon){
+	font-family: @iconfam;
+	&:before{
+		content: @icon;
+	}
+}
+
+.iconAfter(@icon){
+	font-family: @iconfam;
+	&:after{
+		content: @icon;
+	}
+}
+
+.vertical-align() {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

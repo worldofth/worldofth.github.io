@@ -37,6 +37,7 @@ nav{
 
 .work{
 	.box{
+		display: block;
 		border-left: 1px solid #000;
 		border-right: 1px solid #000;
 		padding:10px;
@@ -44,7 +45,17 @@ nav{
 			font-size: 1.8rem;
 			line-height: 2.4rem;
 			margin-bottom: 10px;
-			display: block;
+			display: inline-block;
+		}
+		&:hover{
+			text-decoration: none;
+		}
+		&:hover .title{
+			margin-bottom: 9px;
+			border-bottom: 1px solid @blue;
+		}
+		p{
+			color: @text-colour;
 		}
 	}
 	.row{
